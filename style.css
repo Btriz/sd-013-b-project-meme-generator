@@ -1,25 +1,29 @@
+@font-face {
+  font-family: Impact;
+  src: url('fonts/impact.ttf') format('truetype');
+}
+
 h1{
-  color: rgba(36 , 36 , 36);
-  font-family: sans-serif;
-  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-family: Impact, sans-serif;
+  font-size: 4em;
   width: max-content;
-  margin: 5% auto 10%;
+  margin: 5% auto;
+  text-shadow: 3px 3px 0 black, -3px -3px 0 black, -3px 3px 0 black, 3px -3px 0 black, 0 4px 0 black;
 }
 
 h4 {
   color: rgba(36 , 36 , 36);
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  margin: auto auto 20px;
+  margin: 10px auto 5px;
   text-align: center;
 }
 
 aside {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: rgb(36, 36, 36);
   bottom: 0;
   display: inline-block;
-  height: 850px;
+  height: 720px;
   width: 30%;
   position: absolute;
   left: 0;
@@ -34,27 +38,62 @@ aside {
 
 .button {
   border-radius: 30px;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: rgba(36 , 36 , 36);
-  background-color: white;
   display: block;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 10% auto;
   padding: 10px;
   text-align: center;
   border-style: none;
 }
 
+#buttonsContainer {
+  border-radius: 30px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#buttonsContainer button {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+#fire {
+  color: white;
+  background-color: red;
+}
+
+#water {
+  color: white;
+  background-color: blue;
+
+}
+
+#earth {
+  color: white;
+  background-color: green;
+}
+
 label {
   display: block;
+  border-radius: 30px;
+  color: rgba(36 , 36 , 36);
+  background-color: white;
+  display: block;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 10% auto;
+  padding: 10px;
+  text-align: center;
+  border-style: none;
   width: 85%;
 }
 
 #text-input {
   border-radius: 30px;
   border-style: none;
-  font-family: sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgba(36 , 36 , 36);
   background-color: white;
   display: block;
@@ -88,7 +127,7 @@ main {
 }
 
 #meme-image {
-  font-family: sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 12px;
   color: rgb(161, 161, 161);
   font-style: italic;
@@ -100,7 +139,7 @@ main {
   left: 0;
   right: 0;
   color: white;
-  font-family: sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
   font-weight: 600;
   max-height: max-content;
@@ -109,27 +148,28 @@ main {
   position: absolute;
   text-align: center;
   text-shadow: 5px 5px 5px black;
-  text-transform: uppercase;
   width: 90%;
   word-break: break-all;
 }
 
-#images {
+#imagesContainer {
   border-radius: 30px;
   background-color: white;
   margin: auto;
   max-width: 60%;
-  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
-#images div{
+#images{
   margin: auto;
   max-width: max-content;
 }
 
 #images img {
+  border-radius: 20px;
   display: inline-block;
   height: 4em;
-  margin: 10px;
+  margin: 5px;
   width: 4em;
 }

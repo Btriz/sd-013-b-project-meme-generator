@@ -25,7 +25,7 @@ imageInput.addEventListener('input', imageUploaded);
 
 // BOTÕES
 const memeContainer = document.getElementById('meme-image-container');
-const buttons = document.getElementById('buttons').children;
+const buttons = document.getElementById('buttonsContainer').children;
 
 for (let index = 0; index < buttons.length; index += 1) {
   buttons[index].addEventListener('click', border);
@@ -34,7 +34,7 @@ for (let index = 0; index < buttons.length; index += 1) {
 function border(event) {
   switch (event.target) {
     case document.getElementById('fire'):
-      memeContainer.style.border = '3px solid red';
+      memeContainer.style.border = '3px dashed red';
       break;
     case document.getElementById('water'):
       memeContainer.style.border = '5px double blue';
